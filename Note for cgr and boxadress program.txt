@@ -1,0 +1,80 @@
+Program for kmer indices
+
+This program compares CGR from two plots for an order(k) 3 to 9 and gives respective k-mer index value.
+For two identical plots k-mer index is 0. The value varies btw 0-200 (+ve index ) or -200 to 0 (-ve index).
+ 
+Input data
+
+Specify the name of textfiles which contain coding sequences in 'filename' and 'filename1'.
+
+b03,b1,b2,b3,b4,b5 and b6 corresponds to the order of the CGR plots. (default value is 3,4,5,6,7,8 and 9 respectivley)
+
+
+Outputs ( In workspace)
+
+no1-Absolute value of number of Nonpolar amino acids in coding sequence specified in 'filename'.
+no2-Absolute value of number of Basic amino acids in coding sequence specified in 'filename'.
+no3-Absolute value of number of Acidic amino acids in coding sequence specified in 'filename'.
+no4-Absolute value of number of Polar amino acids in coding sequence specified in 'filename'.
+no5 or nostopcodon- Number of protiensequences in 'filename'.
+
+noo1-Absolute value of number of Nonpolar amino acids in coding sequence specified in 'filename1'.
+noo2-Absolute value of number of Basic amino acids in coding sequence specified in 'filename1'.
+noo3-Absolute value of number of Acidic amino acids in coding sequence specified in 'filename1'.
+noo4-Absolute value of number of Polar amino acids in coding sequence specified in 'filename1'.
+no05 or nostopcodon1- Number of protiensequences in 'filename1'.
+
+percentno1-Percentage value of number of Nonpolar amino acids in coding sequence specified in 'filename'.
+percentno2-Percentage value of number of Basic amino acids in coding sequence specified in 'filename'.
+percentno3-Percentage value of number of Acidic amino acids in coding sequence specified in 'filename'.
+percentno4-Percentage value of number of Polar amino acids in coding sequence specified in 'filename'.
+
+percent1noo1-Percentage value of number of Nonpolar amino acids in coding sequence specified in 'filename1'.
+percent1noo2-Percentage value of number of Basic amino acids in coding sequence specified in 'filename1'.
+percent1noo3-Percentage value of number of Acidic amino acids in coding sequence specified in 'filename1'.
+percent1noo4-Percentage value of number of Polar amino acids in coding sequence specified in 'filename1'.
+
+
+
+combinedthreebitbxad- Consists of boxadresses of CGR plot of order 'b03' (column 1 ) and its corresponding absolute and percentage values (col 2 and 3 respectivley) for 'filename'. 
+combinedthreebitbxad1- Consists of boxadresses of CGR plot of order 'b03' (column 1 ) and its corresponding absolute and percentage values (col 2 and 3 respectivley) for 'filename1'. 
+combinedthreebitbxadsub -boxadresses for subtraction plot (CGRplot of order b03 filename - CGRplot of oder b03 filename1)of order 'b03' (column 1 ) and its corresponding  values (col 2 ) 
+
+combinedfrbitbxad,combinedfivebitbxad,combinedsixbitbxad,combinedsevenbitbxad,combinedeitbitbxad,combinedninebitbxad :- Same as combinedthreebitbxad , but of order b1,b2,b3,b4,b5and b6 respectivley.
+combinedfrbitbxad1,combinedfivebitbxad1,combinedsixbitbxad1,combinedsevenbitbxad1,combinedeitbitbxad1,combinedninebitbxad1 :- Same as combinedthreebitbxad1 , but of order b1,b2,b3,b4,b5and b6 respectivley.
+combinedfrbitbxadsub,combinedfivebitbxadsub,combinedsixbitbxadsub,combinedsevenbitbxadsub,combinedeitbitbxadsub,combinedninebitbxadsub:- Same as combinedthreebitbxadsub , but of order b1,b2,b3,b4,b5and b6 respectivley.
+
+
+Figures
+
+Fig1:- Left:- CGR PC plot of order b03  of 'filename'. Right:-CGR PC plot of order b03  of 'filename1'.
+Fig 2 :- CGR PC plot of order b1 and b2 (left to right)  of 'filename'.
+Fig 3 :- CGR PC plot of order b3 and b4 (left to right)  of 'filename'.
+Fig 4 :- CGR PC plot of order b5 and b6 (left to right)  of 'filename'.
+
+Fig 5 :- CGR PC plot of order b1 and b2 (left to right)  of 'filename1'.
+Fig 6 :- CGR PC plot of order b3 and b4 (left to right)  of 'filename1'.
+Fig 7 :- CGR PC plot of order b5 and b6 (left to right)  of 'filename1'.
+
+
+Fig 8:- Sbbtraction plot of order b03 for filename (fig1 left)-filename1 (fig1 right).
+Fig 9:- Same as fig 8 but of order b1 and b2.
+Fig 10:- Same as fig 8 but of order b3 and b4.
+Fig 11:- Same as fig 8 but of order b5 and b6.
+
+Fig12:- Left:- CGR forbiden plot of order b03  of 'filename'. Right:-CGR forbiden plot of order b03  of 'filename1'.
+Fig 13:- CGR forbiden plot of order b1 and b2 (left to right)  of 'filename'.
+Fig 14:- CGR forbiden plot of order b3 and b4 (left to right)  of 'filename'.
+Fig 15:- CGR forbiden plot of order b5 and b6 (left to right)  of 'filename'.
+
+Fig 16:- CGR forbiden plot of order b1 and b2 (left to right)  of 'filename1'.
+Fig 17:- CGR forbiden plot of order b3 and b4 (left to right)  of 'filename1'.
+Fig 18:- CGR forbiden plot of order b5 and b6 (left to right)  of 'filename1'.
+
+Fig19:- Plot from subtraction of forbiden plots of order b03 for filename (fig12 left)-filename1 (fig12 right).
+Fig20:- Same as fig 19 but of order b1 and b2.
+Fig21:- Same as fig 19 but of order b1 and b2.
+Fig22:- Same as fig 19 but of order b1 and b2.
+
+
+The figures obtained  have to be modified in type of coloring and Color datamax values for a better dispaly. Some templates i used are also attached and matlabfigures.
